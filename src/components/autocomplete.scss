@@ -1,0 +1,32 @@
+.autocomplete {
+  font-size: 20px;
+  display: inline-block;
+  text-align: left;
+
+  .input {
+    font-size: inherit;
+    border: 1px solid #ddd;
+    padding: 7px;
+    line-height: inherit;
+    width: 300px;
+  }
+
+  .suggestions {
+    border: 1px solid #eee;
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 0 15px #eee;
+
+    .item {
+      padding: 7px;
+      cursor: pointer;
+      color: #888;
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}

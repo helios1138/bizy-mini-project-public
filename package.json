@@ -1,0 +1,33 @@
+{
+  "name": "bizy-mini-project-public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:helios1138/bizy-mini-project-public.git",
+  "author": "helios1138 <revan.den@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "react-scripts": "^1.0.5",
+    "serve": "^5.1.5"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "node-sass src/ -o src/ --source-map-embed=true --source-map-contents=true && node-sass src/ -o src/ --source-map-embed=true --source-map-contents=true --watch --recursive",
+    "start": "react-scripts start",
+    "build": "npm run build-css && react-scripts build",
+    "serve": "serve -s build"
+  },
+  "dependencies": {
+    "levenshtein": "^1.0.5",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.3",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.5.3",
+    "reselect": "^3.0.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
